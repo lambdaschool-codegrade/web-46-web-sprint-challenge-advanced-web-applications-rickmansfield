@@ -9,7 +9,7 @@ import deleteColorService from "../services/deleteColorService";
 
 
 const BubblePage = (props) => {
-  console.log('BubblesPage.js ln:12 props', props);
+  // console.log('BubblesPage.js ln:12 props', props);
   const [colors, setColors] = useState([]);
   const [editing, setEditing] = useState(false);
   // const { push } = useHistory();
@@ -35,7 +35,7 @@ const BubblePage = (props) => {
   useEffect (() =>{
     axiosWithAuth();
     fetchColorService(setColors);
-  },[])
+  },[editing])//inserted "editing to prevent memory leak"
 
   return (
     <div className="container">
