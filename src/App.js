@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
 import Login from "./components/Login";
 import "./styles.scss";
+import PrivateRoute from "./components/PrivateRoute";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <a data-testid="logoutButton" href="/">logout</a>
         </header>
         <Switch>
+        <PrivateRoute exact path="/bubbles" component={BubblePage} />
           <Route path="/login" component={Login} />
           <Route path="/" component={Login} />
         </Switch>

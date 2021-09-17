@@ -32,15 +32,13 @@ const Login = (props) => {
           // console.log('Login.js ln:32 res.data', res.data.payload);
           localStorage.setItem("token", res.data.payload);
           push('bubbles');
-          setError("")
-
+          setError("");
         })
         .catch(err => {
           setError("Error logging in");
         })
     }
   }
-
 
   return (
     <div>
