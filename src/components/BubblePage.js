@@ -5,6 +5,8 @@ import fetchColorService from '../services/fetchColorService';
 import axiosWithAuth from "../helpers/axiosWithAuth";
 import saveEditService from "../services/saveEditService";
 import { useHistory } from "react-router";
+import deleteColorService from "../services/deleteColorService";
+
 
 const BubblePage = () => {
   const [colors, setColors] = useState([]);
@@ -22,6 +24,10 @@ const BubblePage = () => {
   };
 
   const deleteColor = (colorToDelete) => {
+    // console.log('BubblePage.js ln:27 colorToDelete', colorToDelete);
+    // console.log('BubblePage.js ln:28 colorToDelete.id', colorToDelete.id);
+    deleteColorService(colorToDelete.id)
+    fetchColorService(setColors);
   };
 
   useEffect (() =>{
