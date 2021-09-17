@@ -4,14 +4,15 @@ import ColorList from "./ColorList";
 import fetchColorService from '../services/fetchColorService';
 import axiosWithAuth from "../helpers/axiosWithAuth";
 import saveEditService from "../services/saveEditService";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router";
 import deleteColorService from "../services/deleteColorService";
 
 
-const BubblePage = () => {
+const BubblePage = (props) => {
+  console.log('BubblesPage.js ln:12 props', props);
   const [colors, setColors] = useState([]);
   const [editing, setEditing] = useState(false);
-  const { push } = useHistory();
+  // const { push } = useHistory();
 
   const toggleEdit = (value) => {
     setEditing(value);
@@ -20,7 +21,8 @@ const BubblePage = () => {
   const saveEdit = (editColor) => {
     saveEditService(editColor);
     fetchColorService(setColors);
-    push('bubbles');
+    // push('bubbles');
+    props.history.push('/bubbles');
   };
 
   const deleteColor = (colorToDelete) => {
