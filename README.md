@@ -1,5 +1,19 @@
 # Advanced Web Applications Sprint Challenge
 
+- [Advanced Web Applications Sprint Challenge](#advanced-web-applications-sprint-challenge)
+  - [Introduction](#introduction)
+  - [Instructions](#instructions)
+    - [Task 1: Transfer Repo](#task-1-transfer-repo)
+    - [Task 2: Project Requirements](#task-2-project-requirements)
+      - [Authentication](#authentication)
+      - [Consuming the API](#consuming-the-api)
+      - [Testing](#testing)
+    - [Reference Materials](#reference-materials)
+      - [API Documentation](#api-documentation)
+      - [Hex Color Examples](#hex-color-examples)
+  - [Submission format](#submission-format)
+  - [Interview Questions](#interview-questions)
+
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
 This challenge allows you to practice the concepts and techniques learned over the past sprint and apply them in a concrete project. This sprint explored **advanced web applications**. During this sprint, you studied **React testing, client-side auth, HTTP methods, and Vercel**.
