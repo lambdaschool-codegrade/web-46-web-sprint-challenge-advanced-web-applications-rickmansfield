@@ -1,10 +1,13 @@
 import axiosWithAuth from '../helpers/axiosWithAuth';
 
-const fetchColorService = (setColor) => {
-    console.log('fetchColorService.js ln:4 setColor', setColor);
-    axiosWithAuth.get('http://localhost:5000/api/colors')
+const fetchColorService = (setColors) => {
+    console.log('fetchColorService.js ln:4 setColors', setColors);
+    axiosWithAuth()
+    .get('colors')
     .then(res=>{
-        console.log('');
+        // console.log('fetchColorService ln:7 res', res);
+        // console.log('fetchColorService ln:7 res', res.data);
+        setColors(res.data)
 
     })
     .catch(err =>{
