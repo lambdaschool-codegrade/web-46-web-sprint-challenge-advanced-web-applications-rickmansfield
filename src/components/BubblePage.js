@@ -20,7 +20,7 @@ const BubblePage = () => {
   const saveEdit = (editColor) => {
     saveEditService(editColor);
     fetchColorService(setColors);
-    push('bubbles')
+    push('bubbles');
   };
 
   const deleteColor = (colorToDelete) => {
