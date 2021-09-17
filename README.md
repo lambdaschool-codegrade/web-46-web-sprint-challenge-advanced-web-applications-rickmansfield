@@ -100,6 +100,25 @@ Your finished project must include all of the following requirements. **Unlike o
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. Add your answers to the questions within `interview_answers.md` file. These will not be counted as a part of your sprint score but will be helpful for preparing you for your endorsement interview, and enhancing overall understanding.
 
 1. Explain what a token is used for.
+
+    **Answer** 
+    Tokens like the JWT JSON web tokens are used to encrypt data for secure transfer between local hosts and servers. We have learned to used the for Authentication. 
+
 2. What steps can you take in your web apps to keep your data secure?
+   
+   **Answer** 
+   The use of Tokens with Private Routes is what I recall learning so far.  By first Authenticating with tokens and then authorization with private routes we can "secure" the data accessible to our user(s). 
+- 
 3. Describe how web servers work.
-4. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+    
+    **Answer** 
+    Servers are both hardware with the software to run them. They can be a single simple small machine or thousands in a farm. They provide the context for housing data. Local hosts send C.R.U.D Creat, Read, Update, Delete "requests" to obtain or manipulate the data. 
+
+2. Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers.
+    
+    **Answer**
+    Create to POST
+    Read to GET
+    Update to PUT
+    Delete to DELETE
+    Personally I find more often than not I will "Read/Get" long before POST, PUT, or DELETE. 
